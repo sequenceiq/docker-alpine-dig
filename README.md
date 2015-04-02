@@ -1,4 +1,4 @@
-While working DNS you always need **dig**. Installing **dig** in various linux 
+While working with DNS you always need the **dig** tool. Installing dig in various linux 
 is always different. The containing package name is:
 
 - debian/ubuntu: dnsutils
@@ -6,8 +6,9 @@ is always different. The containing package name is:
 - alpine: n/a
 
 This repo aims 2 target:
-[] Statically compiled single binary version, to make installation a simple download
-[] Create an alpine linux package for dig
+
+- [ ] Statically compiled single binary version, to make installation a simple download
+- [ ] Create an alpine linux package for dig
 
 ## Statically compiled binary
 

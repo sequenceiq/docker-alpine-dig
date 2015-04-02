@@ -10,8 +10,7 @@ release:
 	rm -rf release && mkdir release
 	go get github.com/progrium/gh-release/...
 	cp build/* release
-	gh-release create sequenceiq/$(NAME) $(VERSION) \
-		$(shell git rev-parse --abbrev-ref HEAD) $(VERSION)
+	gh-release create sequenceiq/docker-alpine-dig $(VERSION)
 
 circleci:
 	rm ~/.gitconfig

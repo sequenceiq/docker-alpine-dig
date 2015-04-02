@@ -4,7 +4,7 @@ VERSION=9.10.2
 build:
 	mkdir -p build
 	docker build -t sequenceiq/alpine-dig:$(VERSION) .
-	docker run sequenceiq/alpine-dig:$(VERSION) cat /usr/bin/dig > build/dig
+	docker run sequenceiq/alpine-dig:$(VERSION) tar czv -C /usr/bin dig > build/dig.tgz
 
 release:
 	rm -rf release && mkdir release

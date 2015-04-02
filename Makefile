@@ -3,7 +3,7 @@ VERSION=9.10.2
 
 build:
 	mkdir -p build
-	docker build -t sequenceiq/alpine-dig:$(VERSION) -f Dockerfile.dig .
+	docker build -t sequenceiq/alpine-dig:$(VERSION) -f Dockerfile .
 	docker run --rm sequenceiq/alpine-dig:9.10.2 cat /usr/bin/dig > build/dig
 
 release:

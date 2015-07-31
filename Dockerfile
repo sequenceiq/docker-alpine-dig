@@ -7,6 +7,7 @@ RUN apk add -U alpine-sdk linux-headers \
     && make \
     && cp ./bin/dig/dig /usr/bin/ \
     && apk del alpine-sdk linux-headers \
-    && rm -rf bind-9.10.2/
+    && rm -rf bind-9.10.2 /
+    && rm /var/cache/apk/*
 
 CMD bash
